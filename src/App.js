@@ -5,12 +5,26 @@ import About from './components/About/About';
 import Service from './components/Service/Service';
 import Instructors from './components/Instructors/Instructors';
 import NotFound from './components/NotFound/NotFound';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, NavLink, } from 'react-router-dom';
 
 function App() {
+  const activeStyle = {
+    fontWeight: "bold",
+    color: "red"
+  }
   return (
     <div className="App">
+
+
       <BrowserRouter>
+
+        <NavLink activeStyle={activeStyle} to="/home">Home</NavLink>
+        <NavLink activeStyle={activeStyle} to="/about">About</NavLink>
+        <NavLink activeStyle={activeStyle} to="/service">Service</NavLink>
+        <NavLink activeStyle={activeStyle} to="instructors">Instructors</NavLink>
+
+
+
         <Switch>
           <Route path="/home">
             <Home></Home>
@@ -27,9 +41,10 @@ function App() {
           <Route exact path="/">
             <Home></Home>
           </Route>
-          <Route>
+          <Route path="*">
             <NotFound></NotFound>
           </Route>
+
         </Switch>
       </BrowserRouter>
 

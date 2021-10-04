@@ -1,11 +1,10 @@
-# This is a Sketch School for future Cartoonists 
+# Sketch School for the future Cartoonists 
+
+ This is a [Sketch School : Cartoonists Platform
+](https://frosty-mcclintock-462ece.netlify.app/home)).
 
 
-This project was bootstrapped with [Sketch School : Cartoonists Platform
-](https://github.com/facebook/create-react-app).
-
-
-## Available Scripts
+## Project Description
 
 *  Editorial cartoons can be so sharp that they help everyone figure out where they stand, including the editorial board.
 
