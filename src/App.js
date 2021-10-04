@@ -1,10 +1,49 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Service from './components/Service/Service';
+import Instructors from './components/Instructors/Instructors';
+import NotFound from './components/NotFound/NotFound';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <h1>Sketch School : A Platform for Cartoonists </h1>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/home">
+            <Home></Home>
+          </Route>
+          <Route path="/about">
+            <About></About>
+          </Route>
+          <Route path="/service">
+            <Service></Service>
+          </Route>
+          <Route path="/Instructors">
+            <Instructors></Instructors>
+          </Route>
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+          <Route>
+            <NotFound></NotFound>
+          </Route>
+        </Switch>
+      </BrowserRouter>
+
+
+
+
+
+
+
+      {/* <Home></Home>
+      <About></About>
+      <Service></Service>
+      <Instructors></Instructors>
+      <NotFound></NotFound> */}
     </div>
   );
 }
