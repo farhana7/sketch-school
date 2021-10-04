@@ -1,7 +1,7 @@
 # Sketch School for the future Cartoonists 
 
  This is a [Sketch School : Cartoonists Platform
-](https://frosty-mcclintock-462ece.netlify.app/home)).
+](https://frosty-mcclintock-462ece.netlify.app/home).
 
 
 ## Project Description
