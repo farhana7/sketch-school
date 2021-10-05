@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
+import Course from "../Course/Course";
 
 const Header = () => {
+  const [tutorials, setTutorials] = useState([]);
+
+  useEffect(() => {
+    fetch("./services.JSON")
+      .then((res) => res.json())
+      .then((data) => setTutorials(data));
+  }, []);
+
   return (
     <div>
-      <h1 className="bg-red-600 bg-contain text-white text-5xl text-white">
+      <h1 className="bg-red-600 bg-contain text-5xl  text-white">
         Sketch School : A Platform for Cartoonists
       </h1>
 
@@ -37,6 +47,18 @@ const Header = () => {
         <h1 className="font-bold text-gray-600">
           Think out of the box, choose your career where less travelled by.
         </h1>
+      </div>
+      <div className="flex gap-6">
+        <h1 className="font-bold text-4xl text-green-900 italic text-left">
+          Our Courses
+        </h1>
+
+        {tutorials.map((tutorial) => (
+          <Course tutorial={tutorial}></Course>
+        ))}
+        <NavLink className="w-32 h-7 bg-gray-400" to="/service">
+          Service
+        </NavLink>
       </div>
     </div>
   );
