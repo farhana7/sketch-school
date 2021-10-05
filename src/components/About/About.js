@@ -13,11 +13,16 @@ const About = () => {
           University of Dhaka, History of Art Department. We work with teachers
           to develop curriculum and to incorporate the best practices of using
           technology in the classroom, all in an effort to improve both teaching
-          and learning in schools around the country. The Sketch School is
-          founded by Rafiqun Nabi and Ahsan Habib (cartoonist)Professor with a
-          grant from BETHA and is currently sponsored by GrameenPhone and The
-          University of Dhaka, History of Art Department. For more information
-          about the Sketch School, contact us.
+          and learning in schools around the country.
+          <br />
+          <br />
+          <br />
+          The Sketch School is founded by Rafiqun Nabi and Ahsan Habib
+          (cartoonist) and is currently sponsored by GrameenPhone and The
+          University of Dhaka, History of Art Department.
+          <br />
+          <br />
+          For more information about the Sketch School, contact us.
         </p>
 
         <img

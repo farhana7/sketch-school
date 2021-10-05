@@ -16,12 +16,12 @@ const Instructors = () => {
         Our honourable Instructors
       </h2>
 
-      <div className="grid gap-4 grid-cols-3 w-50 h-60 ">
+      <div className="grid gap-7 grid-cols-3">
         {teachers.map((teacher) => (
           <Mentor teacher={teacher}></Mentor>
         ))}
 
-        <img className="w-50 h-50" src={teachers.img} alt="" />
+        <img src={teachers.img} alt="" />
         <h3> {teachers.name}</h3>
       </div>
     </div>

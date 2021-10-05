@@ -19,14 +19,22 @@ const Header = () => {
           the pictorial overture or introduction to any key event or personality
           and the readers love them.
           <br />
+          <br />
+          <br />
           The activity of drawing can be very fulfilling as it helps in engaging
           various cognitive domains in creating, evaluating, analyzing,
           applying, and assimilating information. Cartooning also improves
           hand-eye coordination, motor skills, observation skills, and eye for
           detail that will keep them in good stead for life!
+          <br />
+          <br />
+          Editorial cartoons, like written editorials, have an educational
+          purpose. They are intended to make readers think about current
+          political issues. Editorial cartoons must use a visual and verbal
+          vocabulary that is familiar to readers.
         </p>
         <br />
-        <h1>
+        <h1 className="font-bold text-gray-600">
           Think out of the box, choose your career where less travelled by.
         </h1>
       </div>
